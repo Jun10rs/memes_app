@@ -12,7 +12,7 @@ export default function DetailMemes({ route }) {
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 40, marginBottom: 40, fontWeight: "bold" }}>
-        {memes.likes} Likes
+        {memes.likes} Curtidas!
       </Text>
 
       <Image
@@ -28,7 +28,7 @@ export default function DetailMemes({ route }) {
           locale: ptBR,
         })}
       </Text>
-      <Text style={{ fontSize: 20, margin: 10 }}>{memes.sharing} Sharing</Text>
+      <Text style={{ fontSize: 20, margin: 10 }}>{memes.sharing} Compartilhamentos!</Text>
     </View>
   );
 }
