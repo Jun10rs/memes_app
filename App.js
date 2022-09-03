@@ -11,7 +11,7 @@ const StackApp = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <StackApp.Navigator>
+      <StackApp.Navigator initialRouteName="ListMemes">
         <StackApp.Screen
           name="ListMemes"
           component={ListMemes}
@@ -23,9 +23,7 @@ export default function App() {
         <StackApp.Screen
           name="DetailMemes"
           component={DetailMemes}
-          options={{
-            headerShown: false,
-          }}
+         
         />
       </StackApp.Navigator>
     </NavigationContainer>
